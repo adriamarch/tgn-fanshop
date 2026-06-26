@@ -11,12 +11,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Activar versió completa
         run: |
           cp index-complet.html index.html
           git config user.email "bot@tgnfan.shop"
           git config user.name "Deploy Bot"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add index.html
           git commit -m "Llançament 18:00 - Activa productes"
           git push
