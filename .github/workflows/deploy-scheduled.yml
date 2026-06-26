@@ -1,13 +1,22 @@
-name: Deploy avui a les 18:00
-
+name: Deploy llançament 18:00
 on:
   schedule:
-    - cron: '0 16 * * *'     # 18:00 hora Espanya
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Cloudflare Deploy
-        run: curl -X POST "${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}"
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Activar versió completa
+        run: |
+          cp index-complet.html index.html
+          git config user.email "bot@tgnfan.shop"
+          git config user.name "Deploy Bot"
+          git add index.html
+          git commit -m "Llançament 18:00 - Activa productes"
+          git push
