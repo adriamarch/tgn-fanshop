@@ -1,0 +1,819 @@
+/* ============================================= */
+/* 1. BOOTSTRAP                                  */
+/* ============================================= */
+/* Subimos dos niveles (../../) para salir de assets/css y encontrar vendor */
+@import url("../../vendor/bootstrap/css/bootstrap.min.css");
+
+/* ============================================= */
+/* 2. ICONOS Y LIBRERÍAS (Están en la misma carpeta) */
+/* ============================================= */
+/* Si estos archivos están en la misma carpeta que styles.css, no necesitan ruta extra */
+@import url("fontawesome.css");
+@import url("owl.css");
+@import url("flex-slider.css");
+
+/* ============================================= */
+/* 3. ESTILOS PRINCIPALES                       */
+/* ============================================= */
+@import url("tooplate-main.css");
+
+/* ============================================= */
+/* CAROUSEL PRINCIPAL (millorat)               */
+/* ============================================= */
+.carousel-overlay {
+  position: absolute; 
+  top: 0; left: 0; 
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(128,0,0,0.75) 100%);
+}
+
+#main-carousel .carousel-caption {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  bottom: auto !important;
+}
+
+#main-carousel .carousel-item h2 {
+  text-shadow: 0 4px 15px rgba(0,0,0,0.85);
+}
+
+/* Mobile carousel */
+@media (max-width: 600px) {
+  #main-carousel .carousel-caption {
+    top: 42% !important;   /* ajusta si cal */
+  }
+  #main-carousel .carousel-item h2 {
+    font-size: 2rem !important;
+  }
+  #main-carousel .carousel-item p.lead {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* ============================================= */
+/* TESTIMONIALS (Owl Carousel) - Fletxes       */
+/* ============================================= */
+#testimonial-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  z-index: 10;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#testimonial-carousel .owl-nav button {
+  pointer-events: auto;
+  width: 50px;
+  height: 50px;
+  background: #800000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(128,0,0,0.4);
+  font-size: 22px;
+}
+
+#testimonial-carousel .owl-nav, 
+#testimonial-carousel .owl-dots {
+    display: none !important;
+}
+
+/* Altres millores generals */
+.featured-page { padding-top: 70px; }
+
+.testimonial-card {
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    background-color: #600000 !important;
+    border: 2px solid rgba(255,255,255,0.9) !important;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+}
+
+/* Estilos Base Footer */
+.main-footer {
+    background: radial-gradient(circle at top right, #6b0000 0%, #3a0000 100%);
+    color: #f5e8d3;
+    padding: 80px 0 0;
+    position: relative;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.footer-top-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+}
+
+/* Branding */
+.footer-logo {
+    max-width: 240px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+}
+
+.footer-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Títulos */
+.footer-heading {
+    color: #ffd700;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background: #ffd700;
+}
+
+/* Menús */
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 12px;
+}
+
+.footer-menu a {
+    color: #f5e8d3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    display: inline-block;
+}
+
+.footer-menu a:hover {
+    color: #fff;
+    opacity: 1;
+    transform: translateX(8px);
+}
+
+
+/* WhatsApp Card */
+.whatsapp-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.whatsapp-card:hover {
+    background: rgba(37, 211, 102, 0.15);
+    border-color: #25D366;
+    transform: translateY(-5px);
+}
+
+.wa-icon {
+    font-size: 2.5rem;
+    color: #25D366;
+    margin-right: 15px;
+}
+
+.wa-number {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.wa-status {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Social Buttons */
+.social-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    color: white !important;
+    font-size: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-btn:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: #ffd700;
+    color: #4a0000 !important;
+}
+
+/* Sponsors */
+.sponsors-title {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.sponsors-grid {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsor-link img {
+    height: 100px;
+    filter: grayscale(1) brightness(2);
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.sponsor-link:hover img {
+    filter: grayscale(0) brightness(1);
+    opacity: 1;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+    margin-top: 60px;
+    padding: 25px 0;
+    background: rgba(0,0,0,0.4);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.copy-text {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: #f5e8d3;
+}
+
+.bottom-links a {
+    color: #f5e8d3;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-left: 20px;
+    opacity: 0.6;
+}
+
+.bottom-links a:hover { opacity: 1; }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .bottom-inner {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-heading {
+        margin-top: 10px;
+    }
+}
+
+/* === FIX FLEXSLIDER - Imágenes que a veces no cargan === */
+#slider .slides img,
+#carousel .slides img {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;           /* o el ratio real de tus fotos */
+    object-fit: contain;           /* "contain" queda mejor en productos */
+    display: block;
+    max-height: 100%;
+}
+
+/* Seguridad extra por si el JS falla */
+.flexslider .slides > li {
+    display: none;
+}
+.flexslider .slides > li.flex-active-slide {
+    display: block !important;
+}
+
+/* Forzar que las 4 miniaturas se vean bien y queden dentro */
+#carousel .flex-viewport {
+    overflow: hidden !important;
+}
+
+#carousel .slides li {
+    width: 110px !important;   /* debe coincidir con itemWidth */
+    flex-shrink: 0;
+}
+
+#carousel .slides img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain;
+    border: 2px solid #f0f0f0;
+    border-radius: 6px;
+}
+
+/* Flechas estilo similar al slider grande */
+#carousel .flex-direction-nav a {
+    width: 45px;
+    height: 65px;
+    color: white;
+    font-size: 34px;
+    top: 50%;
+    margin-top: -33px;
+    border-radius: 4px;
+}
+
+#carousel .flex-direction-nav .flex-prev { left: -18px; }
+#carousel .flex-direction-nav .flex-next { right: -18px; }
+
+/* Quitar texto Next/Prev */
+#carousel .flex-direction-nav a.flex-prev::before {
+    content: "❮" !important;
+}
+
+#carousel .flex-direction-nav a.flex-next::before {
+    content: "❯" !important;
+}
+
+#carousel .flex-direction-nav a {
+    text-indent: -9999px;           /* Oculta el texto original */
+    font-size: 0;
+}
+
+/* Opcional: mejorar el estilo de las flechas */
+#carousel .flex-direction-nav a::before {
+    text-indent: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    line-height: 1;
+}
+
+@media (max-width: 991px) {
+  .navbar .container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+  }
+  .navbar-brand {
+    width: auto !important;
+    padding: 10px 0 !important;
+    margin-right: 0 !important;
+  }
+  .navbar-logo {
+    height: 48px !important;
+    transform: none !important;
+  }
+  .navbar-toggler {
+    order: 2 !important;
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+  }
+  .navbar-collapse {
+    order: 3 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width:600px){
+
+ /* Image */
+ .navbar .d-flex img{
+  left:3px;
+ }
+
+ /* Button */
+ #main-carousel .carousel-item a{
+  position:relative;
+  top:41px;
+ }
+ 
+ /* Lead */
+ #main-carousel .carousel-item p{
+  top:52px;
+  left:16px;
+ }
+ 
+ /* Bold */
+ #main-carousel .carousel-item h2.fw-bold{
+  font-size:40px !important;
+  position:relative;
+  top:28px;
+ }
+ 
+ /* Bold */
+ .container-fluid #main-carousel .carousel-inner .carousel-item .carousel-caption .container h2.fw-bold{
+  transform:translatex(0px) translatey(18px) !important;
+ }
+ 
+ /* Lead */
+ .container-fluid #main-carousel .carousel-inner .carousel-item .carousel-caption .container p{
+  font-size:24px !important;
+ }
+ 
+}
+
+@media (max-width: 991px) {
+  .navbar .container {
+    display: flex !important;
+    flex-wrap: wrap !important;        /* permite que el collapse baje a nueva línea */
+    align-items: center !important;
+  }
+
+  .navbar-brand {
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  .navbar-toggler {
+    order: 2;
+    margin-left: auto !important;     /* empuja el botón a la derecha */
+    flex-shrink: 0;
+  }
+
+  .navbar-collapse {
+    order: 3;
+    width: 100% !important;           /* ocupa toda la fila siguiente */
+    flex-basis: 100%;
+  }
+}
+
+/* Navbar més estreta i lletra més gran */
+.navbar {
+  padding: 8px 1rem !important;
+}
+
+.navbar-brand {
+  padding: 5px 0 !important;
+}
+
+.navbar-logo { 
+  height: 48px !important; 
+  width: auto; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+/* Títols de secció (Samarretes, Bufandes, etc.) */
+.featured-page h2 {
+  font-size: 2.8rem !important;
+  text-transform: uppercase !important;
+  font-weight: 900 !important;
+  font-style: italic !important;
+  color: #800000 !important;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 1px #800000;
+}
+
+@media (max-width: 767px) {
+  .featured-page h2 {
+    font-size: 2rem !important;
+  }
+}
+
+.swal-custom-popup-clean {
+    border-radius: 16px !important;
+    overflow-x: hidden !important; /* Això mata la fletxa de moure de costat */
+    width: 100%;
+    max-width: 400px !important;
+}
+
+.swal-no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden !important; /* Doble seguretat */
+}
+
+/* Contenidor per defecte de SweetAlert, li traiem els padding perquè el nostre HTML el controli */
+.swal-custom-html-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Capçalera Vermella */
+.swal-header-custom {
+  background: #800000;
+  padding: 28px 24px 20px;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.swal-icon-cart-wrapper {
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  font-size: 30px;
+}
+
+.swal-title-custom {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.swal-subtitle-custom {
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Cos del Resum */
+.swal-body-custom {
+  padding: 20px 24px 0; /* Padding lateral similar a la capçalera */
+  text-align: left;
+}
+
+.swal-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px;
+}
+
+.swal-details-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+}
+
+.swal-last-row {
+  border-bottom: none;
+}
+
+.swal-label {
+  color: #888;
+}
+
+.swal-value {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.swal-shipping-value {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* Bloc del Total */
+.swal-total-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: #fff5f5;
+  border-radius: 10px;
+  border: 1px solid #f5c0c0;
+}
+
+.swal-total-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #800000;
+}
+
+.swal-total-amount {
+  font-size: 22px;
+  font-weight: 800;
+  color: #800000;
+}
+
+/* Nota d'Enviament */
+.swal-shipping-note {
+  margin-top: 12px;
+  margin-bottom: 20px; /* Espai abans dels botons */
+  padding: 10px 14px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 3px solid #800000;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Àrea de Botons Integrada */
+.swal-actions-custom {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* Espai entre botons */
+  padding: 10px 24px 20px; /* Padding inferior per tancar el popup */
+}
+
+/* Botó Cancel·lar Personalitzat */
+.swal-btn-cancel-custom {
+  border: none;
+  background: #aaa;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  order: 1; /* Mantenim cancel·lar a l'esquerra */
+}
+
+/* Botó Confirmar Personalitzat amb la icona ✓ */
+.swal-btn-confirm-custom {
+  border: none;
+  background: #800000;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  order: 2; /* Confirmar a la dreta */
+  flex-grow: 1; /* Ocupa l'espai restant si cal, segons el disseny */
+  max-width: 250px;
+}
+
+.swal-confirm-btn-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* Espai entre icona i text */
+}
+
+.swal-check-icon {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Arrodoneix el popup i evita que el contingut surti de les puntes */
+.swal-custom-popup-clean {
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    width: 400px !important; /* Pots ajustar l'amplada al teu gust */
+}
+
+/* Estil per al botó de guia de talles */
+    .btn-guia-talles {
+      background: transparent;
+      border: 1px solid #800000;
+      color: #800000;
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-guia-talles:hover {
+      background-color: #800000;
+      color: white;
+    }
+
+    .size-guide-wrapper {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+  .swal2-html-container { margin: 1em 0.5em !important; }
+  .tabla-talles {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .tabla-talles thead th {
+    background-color: #800000;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 15px 10px;
+  }
+  .tabla-talles tbody td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 13px;
+    color: #444;
+  }
+  .tabla-talles tbody tr:nth-child(even) { background-color: #fafafa; }
+  .tabla-talles tbody tr:hover { background-color: #fff5f5; }
+  .nota-talles {
+    font-size: 12px;
+    color: #888;
+    margin-top: 15px;
+    font-style: italic;
+    display: block;
+  }
+
+/* Treure les fletxes de pujar/baixar del camp Number (Chrome/Safari/Edge) */
+#quantity::-webkit-outer-spin-button,
+#quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Treure les fletxes de pujar/baixar (Firefox) */
+#quantity[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Apliquem el mateix estil a Talla, Color i Jugador */
+#Talla, #Color, #Jugador, #quantity {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s;
+    appearance: none; /* Treu la fletxa per defecte del navegador */
+    background-color: #fff;
+}
+
+#Talla:focus, #Color:focus, #Jugador:focus {
+    border-color: #800000; /* Color granat al clicar */
+}
+
+/* La fletxa personalitzada */
+#Talla, #Color, #Jugador {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23800000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 18px;
+    cursor: pointer;
+}
+
+.form-field label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+

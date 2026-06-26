@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TGN Fan Shop | Enviaments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root { --grana: #6b0000; --grana-obscur: #4a0000; --daurat: #ffd700; --text: #2d2d2d; --bg: #f8f5f2; }
+    body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); margin: 0; line-height: 1.7; }
+    
+    header { 
+      background: linear-gradient(135deg, var(--grana-obscur) 0%, var(--grana) 100%); 
+      color: white; padding: 4rem 1rem; text-align: center; border-bottom: 4px solid var(--daurat); 
+    }
+    header h1 { margin: 0; font-size: 2.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; }
+
+    main { max-width: 800px; margin: -40px auto 60px; padding: 0 1.5rem; position: relative; z-index: 2; }
+    
+    section { 
+      background: white; border-radius: 16px; padding: 2.5rem; margin-bottom: 2rem; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(107, 0, 0, 0.05);
+    }
+
+    h2 { 
+      color: var(--grana); font-size: 1.4rem; margin-top: 0; display: flex; 
+      align-items: center; gap: 12px; border-bottom: 2px solid #f0f0f0; padding-bottom: 12px; 
+    }
+    h2 i { 
+      font-size: 1.2rem; color: var(--daurat); background: var(--grana); 
+      width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 8px; 
+    }
+
+    .free-shipping-badge {
+      background: linear-gradient(45deg, #ffd700, #ffae00);
+      color: #4a0000;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 800;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+      border: 2px solid var(--grana);
+    }
+
+    .time-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .time-card {
+      background: #fdfdfd;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+      text-align: center;
+    }
+
+    .time-card i { font-size: 2rem; color: var(--grana); margin-bottom: 10px; }
+    .time-card strong { display: block; font-size: 1.2rem; color: var(--grana-obscur); }
+    .time-card span { font-size: 0.9rem; opacity: 0.7; }
+
+    .origin-note {
+      font-size: 0.9rem;
+      background: #f1f1f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      border-left: 4px solid #ccc;
+    }
+
+    footer { text-align: center; padding: 40px; background: #eee; border-top: 1px solid #ddd; font-size: 0.9rem; }
+
+    @media (max-width: 600px) {
+      .time-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Logística i Enviaments</h1>
+  <p>Portem la teva comanda directament a la teva porta.</p>
+</header>
+
+<main>
+  <!-- PROMOCIÓ ESTRELLA -->
+  <div class="free-shipping-badge">
+    <i class="fas fa-gift"></i> Enviament Gratuït Sempre Inclòs
+  </div>
+
+  <section>
+    <h2><i class="fas fa-truck-loading"></i> Terminis d'entrega</h2>
+    <p>A TGN Fan Shop treballem amb centres de logística internacionals situats fora de la Unió Europea per oferir-te els millors preus i productes exclusius. Depenent de l'article seleccionat, els temps mitjans de lliurament són:</p>
+    
+    <div class="time-grid">
+      <div class="time-card">
+        <i class="fas fa-europace"></i>
+        <strong>9-10 dies laborables</strong>
+        <span>Destinacions a Europa / Espanya</span>
+      </div>
+      <div class="time-card">
+        <i class="fas fa-globe-americas"></i>
+        <strong>13 dies (aprox.)</strong>
+        <span>Resta del món</span>
+      </div>
+    </div>
+
+    <div class="origin-note">
+      <i class="fas fa-info-circle"></i> <strong>Nota sobre l'origen:</strong> Com que es tracta d'enviaments internacionals, els paquets passen per controls duaners que poden variar lleugerament els terminis segons el producte.
+    </div>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-box-open"></i> Seguiment de comanda</h2>
+    <p>Una vegada el teu producte surti del centre logístic, rebràs una notificació. El nostre objectiu és que estiguis informat en tot moment de l'estat del teu paquet.</p>
+    <p>Recorda que, en ser enviament directe des de fàbrica (fora de la UE), podríem enviar els articles de la mateixa comanda en paquets separats si provenen de diferents proveïdors.</p>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-wallet"></i> Sense sorpreses</h2>
+    <p>A TGN Fan Shop no volem que et preocupis per càlculs d'última hora. Per això, <strong>totes les compres inclouen l'enviament de forma gratuïta</strong>, sense import mínim. El preu que veus és el preu final que pagues.</p>
+  </section>
+</main>
+
+<footer>
+  © 2026 <strong>TGN Fan Shop</strong> — Tarragona al món.
+</footer>
+
+</body>
+</html>

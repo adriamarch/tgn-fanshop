@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Tenda de productes inspirats en la història del futbol tarragoní. Samarretes, bufandes, banderes i més!">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <title>TGN Fan Shop | Inici</title>
+  <link rel="canonical" href="https://tgnfan.shop/">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- jQuery i Bootstrap -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "OnlineStore",
+    "name": "TGN Fan Shop",
+    "url": "https://tgnfan.shop/",
+    "description": "Tenda de productes inspirats en la història del futbol tarragoní.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tarragona",
+      "addressCountry": "ES"
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.webp">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script type="text/javascript" src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+</head>
+
+<style>
+
+/* Featured items */
+.featured-item {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 16px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  background: #fff; position: relative;
+}
+.featured-item:hover { transform: translateY(-12px) scale(1.04); }
+.featured-item img { transition: transform 0.5s ease; width: 100%; }
+.featured-item:hover img { transform: scale(1.1); }
+
+.etiqueta-disponible { background: #007c2f; color: white; }
+.etiqueta-no-disponible { background: #d32f2f; color: white; }
+.etiqueta-promocionat { background: #ffd700; color: #800000; }
+.etiqueta-disponible, .etiqueta-no-disponible, .etiqueta-promocionat {
+  position: absolute; top: 15px; right: 15px; padding: 6px 14px;
+  border-radius: 30px; font-size: 0.85rem; font-weight: 700; z-index: 10;
+}
+
+.featured-page { padding-top: 80px; }
+.line-dec { width: 80px; height: 4px; background: linear-gradient(to right, #800000, #ffd700); margin: 15px auto; }
+
+</style>
+
+<body>
+  <!-- Pre Header -->
+  <div id="pre-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <span>Dissenys inspirats en la història del futbol tarragoní. Productes no oficials. Tenda no afiliada a cap club.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #800000; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+    <div class="container">
+        <!-- El logo se queda aquí -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/images/header-logo.webp" alt="TGN Fan Shop" class="navbar-logo" style="height: 55px; width: auto;">
+        </a>
+
+        <!-- El botón de menú se irá automáticamente a la derecha por el contenedor flex -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link text-white px-4" href="index.html#samarretes">Samarretes</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-4" href="index.html#bufandes">Bufandes</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-4" href="index.html#dessuadores">Dessuadores</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-4" href="index.html#enganxines">Enganxines</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-4" href="index.html#banderes">Banderes</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-4" href="index.html#altres">Altres</a></li>
+        </ul>
+      </div>
+
+
+      
+  </nav>
+
+  <!-- CAROUSEL MILLORAT -->
+  <div class="container-fluid px-0">
+    <div id="main-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#main-carousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-image-container" style="height: 50vh; min-height: 300px;">
+            <img src="assets/images/slide1.webp" class="d-block w-100 h-100" alt="Slide 1" style="object-fit: cover;">
+            <div class="carousel-overlay"></div>
+          </div>
+          <div class="carousel-caption text-center" style="top: 50%; transform: translateY(-50%);">
+            <div class="container">
+              <h2 class="display-3 fw-bold text-white mb-3"
+    style="font-family:'Montserrat',sans-serif;font-weight:700;font-style:italic;text-shadow:0 4px 15px rgba(0,0,0,0.8);">
+    JA DISPONIBLES!
+</h2>
+              <p class="lead text-white mb-4" style="font-size: 1.4rem;">Les noves bufandes</p>
+              <a href="index.html#bufandes" class="btn btn-light btn-lg px-5 py-3 fw-bold" style="border-radius: 50px; font-size: 1.2rem; background: #fff; color: #800000;">
+                Comprar ara <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+<div class="carousel-item">
+  <div class="carousel-image-container" style="height: 50vh; min-height: 300px;">
+    <img src="assets/images/slide2.webp" class="d-block w-100 h-100" alt="Slide 2" style="object-fit: cover; object-position: 50% 41%;">
+    <div class="carousel-overlay"></div>
+  </div>
+  <div class="carousel-caption text-center" style="top: 50%; transform: translateY(-50%);">
+    <div class="container">
+      <h2 class="display-3 fw-bold text-white mb-3"
+    style="font-family:'Montserrat',sans-serif;font-weight:700;font-style:italic;text-shadow:0 4px 15px rgba(0,0,0,0.8);">
+    JA DISPONIBLE!
+</h2>
+      <p class="lead text-white mb-4" style="font-size: 1.4rem;">La nova bandera de "La creu tradicional"</p>
+      <a href="producte-31.html" class="btn btn-light btn-lg px-5 py-3 fw-bold" style="border-radius: 50px; font-size: 1.2rem; background: #fff; color: #800000;">
+        Comprar ara <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </div>
+</div>
+      <!-- Controls -->
+<a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+</a>
+<a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+</a>
+    </div>
+  </div>
+
+  <!-- SAMARRETES -->
+  <div id="samarretes" class="featured-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 style="color: #800000;">Samarretes</h2>
+          <div class="line-dec"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="featured container no-gutter">
+    <div class="row posts">
+      <div id="2" class="item col-md-4">
+        <a href="producte-2.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v2.webp" alt="">
+            <h4 style="color: #800000;">"El futbol sense aficionats NO ÉS RES"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">40€</span> <span style="color: #007c2f; font-weight: bold;">17,50€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="3" class="item col-md-4">
+        <a href="producte-3.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img id="rotating-image-3" src="assets/images/v3.webp" alt="">
+            <h4 style="color: #800000;">"1886"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">40€</span> <span style="color: #007c2f; font-weight: bold;">17,50€</span></h6>
+          </div>
+        </a>
+      </div>
+      
+<!--
+<div id="1" class="item col-md-4">
+  <a href="producte-1.html">
+    <div class="featured-item position-relative">
+      <span class="etiqueta-disponible">JA DISPONIBLE</span>
+      <img src="assets/images/v1.webp" alt="">
+      <h4 style="color: #800000;">"Tradició familiar"</h4>
+      <h6><span style="text-decoration: line-through; color: gray;">40€</span> <span style="color: #007c2f; font-weight: bold;">15€</span></h6>
+    </div>
+  </a>
+</div>
+-->
+
+<!--
+      <div id="4" class="item col-md-4">
+        <a href="producte-4.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v4.webp" alt="">
+            <h4 style="color: #800000;">"3 finals, 1 sentiment"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">40€</span> <span style="color: #007c2f; font-weight: bold;">15€</span></h6>
+          </div>
+        </a>
+      </div>
+      -->
+
+      <div id="18" class="item col-md-4">
+        <a href="producte-18.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img id="rotating-image-18" src="assets/images/v18.webp" alt="">
+            <h4 style="color: #800000;">"Sempre uno di noi"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">40€</span> <span style="color: #007c2f; font-weight: bold;">17,50€</span></h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="34" class="item col-md-4">
+        <a href="producte-34.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v34.webp" alt="">
+            <h4 style="color: #800000;">"Match Day Every Day"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">40€</span> <span style="color: #007c2f; font-weight: bold;">17,50€</span></h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="35" class="item col-md-4">
+        <a href="producte-35.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img id="rotating-image-35" src="assets/images/v35.webp" alt="">
+            <h4 style="color: #800000;">"Coronats"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">40€</span> <span style="color: #007c2f; font-weight: bold;">17,50€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="50" class="item col-md-4">
+        <a href="https://wa.me/34623519501">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-promocionat">PROMOCIONAT</span>
+            <img src="assets/images/v50.webp" alt="">
+            <h4 style="color: #800000;">"Samarreta personalitzada"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">45€</span> <span style="color: #007c2f; font-weight: bold;">20€</span></h6>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUFANDES -->
+  <div id="bufandes" class="featured-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 style="color: #800000;">Bufandes</h2>
+          <div class="line-dec"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="featured container no-gutter">
+    <div class="row posts">
+      <div id="b1" class="item col-md-4">
+        <a href="producte-66.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/producte-66.webp" alt="Bufanda 1886">
+            <h4 style="color: #800000;">"1886"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">35€</span> <span style="color: #007c2f; font-weight: bold;">15€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="b2" class="item col-md-4">
+        <a href="producte-67.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/producte-67.webp" alt="Bufanda Sempre Grana">
+            <h4 style="color: #800000;">"SEMPRE GRANA"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">35€</span> <span style="color: #007c2f; font-weight: bold;">15€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="b3" class="item col-md-4">
+        <a href="producte-68.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/producte-68.webp" alt="Bufanda Orgull Català">
+            <h4 style="color: #800000;">"ORGULL CATALÀ"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">35€</span> <span style="color: #007c2f; font-weight: bold;">15€</span></h6>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+<!-- DESSUADORES -->
+<div id="dessuadores" class="featured-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 style="color: #800000;">Dessuadores</h2>
+        <div class="line-dec"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="featured container no-gutter">
+  <style>
+    .prox-box {
+      background: #800000;
+      border-radius: 18px;
+      padding: 36px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin: 0 auto 40px;
+    }
+    .prox-title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      margin: 0;
+      text-align: center;
+    }
+    .prox-title span { color: #ffd700; }
+    .tracker {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+    }
+    .step-circle {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      position: relative;
+      z-index: 2;
+    }
+    .step.done .step-circle {
+      background: #ffd700;
+      color: #800000;
+    }
+    .step.pending .step-circle {
+      background: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.4);
+      border: 1.5px solid rgba(255,255,255,0.2);
+    }
+    .step-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .step.done .step-label { color: #ffd700; }
+    .step.pending .step-label { color: rgba(255,255,255,0.35); }
+    .connector {
+      flex: 1;
+      height: 2px;
+      margin-bottom: 28px;
+    }
+    .connector.done { background: #ffd700; }
+    .connector.pending { background: rgba(255,255,255,0.12); }
+    .prox-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: #800000;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+    .prox-wa-btn:hover { background: #ffd700; color: #800000; text-decoration: none; }
+  </style>
+
+  <div class="prox-box">
+
+    <p class="prox-title">Aviat podràs lluir les <span>dessuadores</span> amb estil.</p>
+
+    <div class="tracker">
+      <div class="step done">
+        <div class="step-circle">✓</div>
+        <div class="step-label">Fase 1<br>Disseny</div>
+      </div>
+      <div class="connector pending"></div>
+      <div class="step pending">
+        <div class="step-circle">2</div>
+        <div class="step-label">Fase 2<br>Publicació</div>
+      </div>
+    </div>
+
+    <a href="https://wa.me/34623519501" class="prox-wa-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      Avisa'm quan arribin
+    </a>
+
+  </div>
+</div>
+
+  <!-- ENGANXINES -->
+  <div id="enganxines" class="featured-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 style="color: #800000;">Enganxines</h2>
+          <div class="line-dec"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="featured container no-gutter">
+    <div class="row posts">
+      <div id="59" class="item col-md-4">
+        <a href="producte-59.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v59.webp" alt="">
+            <h4 style="color: #800000;">"TARRACO ON TOUR" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="14" class="item col-md-4">
+        <a href="producte-14.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v14.webp" alt="">
+            <h4 style="color: #800000;">"LA MATEIXA MERDA DE SEMPRE" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="17" class="item col-md-4">
+        <a href="producte-17.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v17.webp" alt="">
+            <h4 style="color: #800000;">"NINOT GO HOME" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="38" class="item col-md-4">
+        <a href="producte-38.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v38.webp" alt="">
+            <h4 style="color: #800000;">"100% ANTIREUSENC" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="43" class="item col-md-4">
+        <a href="producte-43.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img id="rotating-image-43" src="assets/images/v43.webp" alt="">
+            <h4 style="color: #800000;">"FCK" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="55" class="item col-md-4">
+        <a href="producte-55.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img id="rotating-image-55" src="assets/images/v55.webp" alt="">
+            <h4 style="color: #800000;">"FCK" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="62" class="item col-md-4">
+        <a href="producte-62.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v62.webp" alt="">
+            <h4 style="color: #800000;">"FINS AL FINAL" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+      <div id="63" class="item col-md-4">
+        <a href="producte-63.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v63.webp" alt="">
+            <h4 style="color: #800000;">"1886" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="57" class="item col-md-4">
+        <a href="producte-57.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v57.webp" alt="">
+            <h4 style="color: #800000;">"TARRAKO ON TOUR" </h4>
+            <h6><span style="text-decoration: line-through; color: gray;">30€</span> <span style="color: #007c2f; font-weight: bold;">10€</span></h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="51" class="item col-md-4">
+        <a href="https://wa.me/34623519501">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-promocionat">PROMOCIONAT</span>
+            <img src="assets/images/v51.webp" alt="">
+            <h4 style="color: #800000;">"Enganxina personalitzada"</h4>
+            <h6><span style="text-decoration: line-through; color: gray;">45€</span> <span style="color: #007c2f; font-weight: bold;">20€</span></h6>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== BANDERES ==================== -->
+  <div id="banderes" class="featured-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 style="color: #800000;">Banderes</h2>
+          <div class="line-dec"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured container no-gutter">
+    <div class="row posts">
+
+      <div id="8" class="item col-md-4">
+        <a href="producte-8.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v8.webp" alt="">
+            <h4 style="color: #800000;">"Catalunya"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="10" class="item col-md-4">
+        <a href="producte-10.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v10.webp" alt="">
+            <h4 style="color: #800000;">"Tarragona"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="22" class="item col-md-4">
+        <a href="producte-22.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v22.webp" alt="">
+            <h4 style="color: #800000;">"Tarragona"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="65" class="item col-md-4">
+        <a href="producte-65.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v65.webp" alt="">
+            <h4 style="color: #800000;">"Tarragona"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="26" class="item col-md-4">
+        <a href="producte-26.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v26.webp" alt="">
+            <h4 style="color: #800000;">"Creu de Sant Jordi"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="12" class="item col-md-4">
+        <a href="producte-12.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v12.webp" alt="">
+            <h4 style="color: #800000;">"Grana i blanc"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="53" class="item col-md-4">
+        <a href="producte-53.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v53.webp" alt="">
+            <h4 style="color: #800000;">"Grana i blanc"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="37" class="item col-md-4">
+        <a href="producte-37.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v37.webp" alt="">
+            <h4 style="color: #800000;">"Grana i blanc"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="39" class="item col-md-4">
+        <a href="producte-39.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v39.webp" alt="">
+            <h4 style="color: #800000;">"Grana i blanc"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="16" class="item col-md-4">
+        <a href="producte-16.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v16.webp" alt="">
+            <h4 style="color: #800000;">"Roig i negre"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="40" class="item col-md-4">
+        <a href="producte-40.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v40.webp" alt="">
+            <h4 style="color: #800000;">"Orgull Tarragoní"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="31" class="item col-md-4">
+        <a href="producte-31.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v31.webp" alt="">
+            <h4 style="color: #800000;">"La creu tradicional"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="13" class="item col-md-4">
+        <a href="producte-13.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v13.webp" alt="">
+            <h4 style="color: #800000;">"Grana fins la mort"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">25€</span>
+              <span style="color: #007c2f; font-weight: bold;">8,25€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="52" class="item col-md-4">
+        <a href="https://wa.me/34623519501">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-promocionat">PROMOCIONAT</span>
+            <img src="assets/images/v52.webp" alt="">
+            <h4 style="color: #800000;">"Bandera personalitzada"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">45€</span>
+              <span style="color: #007c2f; font-weight: bold;">13,25€ / 17,25€ / 21€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== ALTRES ARTICLES ==================== -->
+  <div id="altres" class="featured-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 style="color: #800000;">Altres articles</h2>
+          <div class="line-dec"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured container no-gutter">
+    <div class="row posts">
+
+      <div id="15" class="item col-md-4">
+        <a href="producte-15.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v15.webp" alt="Pal de suport de bandera">
+            <h4 style="color: #800000;">"Pal plegable per a bandera"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">30€</span>
+              <span style="color: #007c2f; font-weight: bold;">10€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="20" class="item col-md-4">
+        <a href="producte-20.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img id="rotating-image-20" src="assets/images/v20.webp" alt="Cordill">
+            <h4 style="color: #800000;">"Cordill"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">15€</span>
+              <span style="color: #007c2f; font-weight: bold;">5€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+            <!--
+      <div id="21" class="item col-md-4">
+        <a href="producte-21.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img id="rotating-image-21" src="assets/images/v21.webp" alt="Tassa negra">
+            <h4 style="color: #800000;">"Tassa negra"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">35€</span>
+              <span style="color: #007c2f; font-weight: bold;">15€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+-->
+
+      <div id="23" class="item col-md-4">
+        <a href="producte-23.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v23.webp" alt="Gorra negra">
+            <h4 style="color: #800000;">"Gorra tarragonina"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">30€</span>
+              <span style="color: #007c2f; font-weight: bold;">10€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="24" class="item col-md-4">
+        <a href="producte-24.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v24.webp" alt="Funda 1" height="200">
+            <h4 style="color: #800000;">"Funda tarragonina"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">45€</span>
+              <span style="color: #007c2f; font-weight: bold;">20€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="25" class="item col-md-4">
+        <a href="producte-25.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v25.webp" alt="Funda 2" height="200">
+            <h4 style="color: #800000;">"Funda tarragonina"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">45€</span>
+              <span style="color: #007c2f; font-weight: bold;">20€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="27" class="item col-md-4">
+        <a href="producte-27.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v27.webp" alt="Funda 3" height="200">
+            <h4 style="color: #800000;">"Funda tarragonina"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">45€</span>
+              <span style="color: #007c2f; font-weight: bold;">20€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="30" class="item col-md-4">
+        <a href="producte-30.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img src="assets/images/v30.webp" alt="Funda 6" height="200">
+            <h4 style="color: #800000;">"Funda tarragonina amb dorsal de jugador"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">45€</span>
+              <span style="color: #007c2f; font-weight: bold;">20€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+      <div id="32" class="item col-md-4">
+        <a href="producte-32.html">
+          <div class="featured-item position-relative">
+            <span class="etiqueta-disponible">JA DISPONIBLE</span>
+            <img id="rotating-image-32" src="assets/images/v33.webp" alt="Barret BUCKET" style="width: 100%;">
+            <h4 style="color: #800000;">"Barret BUCKET"</h4>
+            <h6>
+              <span style="text-decoration: line-through; color: gray;">45€</span>
+              <span style="color: #007c2f; font-weight: bold;">20€</span>
+            </h6>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+<div class="testimonials-section" style="background-color: #f8f9fa; padding: 80px 0; margin-top: 60px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center mb-5">
+        <h2 style="color: #800000; font-weight: bold;">OPINIONS DELS CLIENTS</h2>
+        <div class="line-dec" style="margin: 15px auto;"></div>
+      </div>
+    </div>
+    
+    <div class="trustpilot-widget" data-locale="es-ES" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="68a36d964bf30535fa423908" data-style-height="52px" data-style-width="100%" data-token="60e36e41-91b5-44d8-a56d-b94eb272ef8a">
+      <a href="https://es.trustpilot.com/review/tgnfan.shop" target="_blank" rel="noopener">Trustpilot</a>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <div id="testimonial-carousel" class="owl-carousel owl-theme">
+          
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user1.webp" alt="Client 1" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">Nur Ventura</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">Tracte increïble, i producte superxulo!! Repetiré sens dubte!</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">18 d'agost, 2025</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user2.webp" alt="Client 2" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">Amador V</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">Roba de qualitat</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">19 d'agost, 2025</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user3.webp" alt="Client 3" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">Iker Correa</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">Enviament ràpid, samarreta de bona qualitat i atenció al client de 10!</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">29 d'agost, 2025</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user4.webp" alt="Client 4" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">Tryzzyx</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">Molt bona qualitat i bon preu, sens dubte de les millors botigues de roba on he comprat</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">10 de setembre, 2025</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user5.webp" alt="Client 5" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">Raúl G</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">Molt recomanable però cal demanar el producte amb força antelació si el vols tenir per a una data concreta</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">7 d'octubre, 2025</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user6.webp" alt="Client 6" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">Santi D</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">Vaig demanar una funda per mòbil i tot va anar perfectament, tant el tracte com l'enviament</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">22 de desembre, 2025</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user9.webp" alt="Client 9" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">David Roca</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">Gran qualitat de roba i dissenys molt treballats. També molt bé de preu. S'ha de tenir en compte que s'ha de demanar amb bastant antelació si es vol tenir un producte a una data concreta. Molt bona experiència.</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">25 de desembre, 2025</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user7.webp" alt="Client 7" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">Pau Espallargas</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">La qualitat de les samarretes molt bona i l'enviament molt ràpid. El tracte amb el client super bo. Gràcies per tot.</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">19 de gener, 2026</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-card" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 100%;">
+              <div class="testimonial-header d-flex align-items-center mb-4">
+                <img src="assets/images/user8.webp" alt="Client 8" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #800000;">
+                <div class="ml-3">
+                  <h5 style="color: #800000; margin-bottom: 0;">Jordi Anguera</h5>
+                  <div class="rating" style="color: #FFD700; font-size: 18px;">★ ★ ★ ★ ★</div>
+                </div>
+              </div>
+              <p style="font-style: italic; color: #555;">Tot perfecte. Rapidesa d'enviament i qualitat a bon preu.</p>
+              <div class="testimonial-date" style="color: #777; font-size: 14px; text-align: right; margin-top: 15px;">12 d'abril, 2026</div>
+            </div>
+          </div>
+
+        </div> </div> </div> </div> </div>
+
+<!-- ==================== FOOTER PREMIUM TGN FAN SHOP ==================== -->
+<footer class="main-footer">
+  <!-- Línea decorativa superior -->
+  <div class="footer-top-border"></div>
+
+  <div class="container">
+    <div class="row gy-5">
+
+      <!-- Columna 1: Branding & Trust -->
+      <div class="col-lg-4 col-md-12">
+        <div class="footer-brand">
+          <img src="assets/images/header-logo.webp" alt="TGN Fan Shop" class="footer-logo">
+          <p class="footer-description">
+            La passió del futbol tarragoní en cada detall. Som la tenda de referència per als amants de la nostra història.
+          </p>
+        </div>
+
+        <div class="sponsors-section">
+          <span class="sponsors-title">AMB EL SUPORT DE</span>
+          <div class="sponsors-grid">
+            <a href="https://www.instagram.com/nastic.express" target="_blank" class="sponsor-link">
+              <img src="assets/images/Logo-Express.webp" alt="Nàstic Express">
+            </a>
+            <a href="https://x.com/ElOtroFutbolTV" target="_blank" class="sponsor-link">
+              <img src="assets/images/Logo-ElOtroFutbol.webp" alt="El Otro Fútbol">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna 2: Enlaces Rápidos -->
+      <div class="col-lg-2 col-6">
+        <h5 class="footer-heading">Botiga</h5>
+        <ul class="footer-menu">
+          <li><a href="#samarretes">Samarretes</a></li>
+          <li><a href="#bufandes">Bufandes</a></li>
+          <li><a href="#dessuadores">Dessuadores</a></li>
+          <li><a href="#enganxines">Enganxines</a></li>
+          <li><a href="#banderes">Banderes</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Soporte -->
+      <div class="col-lg-2 col-6">
+        <h5 class="footer-heading">Ajuda</h5>
+        <ul class="footer-menu">
+          <li><a href="contacte.html">Contacta'ns</a></li>
+          <li><a href="proteccio-de-dades.html">Protecció de dades</a></li>
+          <li><a href="devolucions.html">Devolucions</a></li>
+          <li><a href="enviament.html">Enviament</a></li>
+          <li><a href="pagament.html">Pagament</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Contacto y Social -->
+      <div class="col-lg-4 col-md-12">
+        <h5 class="footer-heading">Connecta amb nosaltres</h5>
+        
+        <a href="https://wa.me/34623519501" class="whatsapp-card">
+          <div class="wa-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="wa-text">
+            <span class="wa-number">+34 623 519 501</span>
+            <span class="wa-status">Atenció immediata per WhatsApp</span>
+          </div>
+        </a>
+
+        <div class="social-wrapper">
+          <a href="https://www.facebook.com/share/1Foes1XzUJ/" class="social-btn fb"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/tgn.fan.shop" class="social-btn ig"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@tgn.fan.shop" class="social-btn tk"><i class="fab fa-tiktok"></i></a>
+          <a href="https://x.com/tgn_fan_shop" class="social-btn x"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="bottom-inner">
+        <p class="copy-text">© 2026 <strong>TGN Fan Shop</strong>. Dissenyat amb passió a Tarragona.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/isotope.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      // Testimonials carousel
+      $("#testimonial-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive:{
+          0:{ items:1 },
+          768:{ items:2 },
+          992:{ items:3 }
+        }
+      });
+    });
+  </script>
+
+<script>
+document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+  link.addEventListener('click', function () {
+    var navbar = document.getElementById('navbarMenu');
+    
+    if (navbar.classList.contains('show')) {
+      var bsCollapse = new bootstrap.Collapse(navbar, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    }
+  });
+});
+</script>
+</body>
+</html>

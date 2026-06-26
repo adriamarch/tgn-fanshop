@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TGN Fan Shop | Pagament</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --grana: #6b0000;
+      --grana-obscur: #4a0000;
+      --daurat: #ffd700;
+      --text: #2d2d2d;
+      --bg: #f8f5f2;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--grana-obscur) 0%, var(--grana) 100%);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 4px solid var(--daurat);
+    }
+
+    header h1 { margin: 0; font-size: 2.2rem; text-transform: uppercase; font-weight: 800; }
+
+    main {
+      max-width: 1000px;
+      margin: -30px auto 60px;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    h2 { color: var(--grana); font-size: 1.3rem; margin-top: 0; margin-bottom: 1.5rem; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+
+    /* Mètodes de pagament */
+    .methods-container { display: grid; gap: 15px; margin-bottom: 2rem; }
+    
+    .method-card {
+      border: 2px solid #eee;
+      border-radius: 12px;
+      padding: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .method-card.selected {
+      border-color: var(--grana);
+      background: rgba(107, 0, 0, 0.02);
+    }
+
+    .method-card.disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      background: #f9f9f9;
+    }
+
+    .method-info { display: flex; align-items: center; gap: 15px; }
+    .method-info i { font-size: 1.5rem; color: var(--grana); }
+    
+    .badge-off {
+      background: #e74c3c;
+      color: white;
+      font-size: 0.7rem;
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* Instruccions de pagament */
+    .payment-instructions {
+      background: #fffdf0;
+      border: 1px dashed var(--daurat);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .info-row:last-child { border: none; margin: 0; padding: 0; }
+
+    .btn-copy {
+      background: var(--grana);
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn-copy:hover { background: var(--grana-obscur); }
+
+    /* Resum lateral */
+    aside .card { position: sticky; top: 20px; }
+    
+    .summary-list { list-style: none; padding: 0; font-size: 0.95rem; }
+    .summary-list li { margin-bottom: 12px; display: flex; gap: 10px; }
+    .summary-list i { color: var(--grana); margin-top: 5px; }
+
+    details { margin-top: 15px; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 10px; }
+    summary { cursor: pointer; font-weight: 600; color: var(--grana); margin-bottom: 5px; }
+
+    footer { text-align: center; padding: 30px; color: #888; font-size: 0.8rem; }
+
+    @media (max-width: 850px) {
+      main { grid-template-columns: 1fr; margin-top: -20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Pagament Segur</h1>
+  <p>Finalitza la teva comanda a TGN Fan Shop</p>
+</header>
+
+<main>
+  <!-- Columna Principal -->
+  <section class="card">
+    <h2>Mètode de pagament</h2>
+    
+    <div class="methods-container">
+      <!-- PayPal -->
+      <div class="method-card selected" id="opt-paypal">
+        <div class="method-info">
+          <i class="fab fa-paypal"></i>
+          <div>
+            <strong>PayPal</strong><br>
+            <small>Ràpid i protegit</small>
+          </div>
+        </div>
+        <i class="fas fa-check-circle" style="color: var(--grana)"></i>
+      </div>
+
+      <!-- Bizum -->
+      <div class="method-card disabled" id="opt-bizum">
+        <div class="method-info">
+          <i class="fas fa-mobile-alt"></i>
+          <div>
+            <strong>Bizum</strong><br>
+            <small>Temporalment fora de servei</small>
+          </div>
+        </div>
+        <span class="badge-off">NO DISPONIBLE</span>
+      </div>
+    </div>
+
+    <h2>Instruccions de pagament</h2>
+    <div class="payment-instructions" id="panel-paypal">
+      <div class="info-row">
+        <span><i class="fas fa-users"></i> Enviar com a: <strong>Amics i Familiars</strong></span>
+      </div>
+      <div class="info-row">
+        <span><i class="fas fa-envelope"></i> Correu: <strong id="mail">2024futwear@gmail.com</strong></span>
+        <button class="btn-copy" id="copyMail">Copia</button>
+      </div>
+      <div class="info-row" style="opacity: 0.7; font-size: 0.85rem;">
+        <span><i class="fas fa-info-circle"></i> Guarda el comprovant un cop realitzat el pagament per si el necessitem.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Columna Lateral -->
+  <aside>
+    <div class="card">
+      <h2>Resum de passos</h2>
+      <ul class="summary-list">
+        <li><i class="fas fa-1"></i> Tria PayPal com a mètode.</li>
+        <li><i class="fas fa-2"></i> Envia l'import total a l'email indicat.</li>
+        <li><i class="fas fa-3"></i> <strong>Important:</strong> Selecciona el mode "Amics i Familiars".</li>
+      </ul>
+      
+      <button class="btn-copy" style="width: 100%; padding: 12px; margin-top: 10px;" id="copyAll">
+        Còpia totes les instruccions
+      </button>
+
+      <details>
+        <summary>Per què Amics i Familiars?</summary>
+        <p>Aquest mètode ens permet rebre l'import íntegre sense comissions externes, garantint l'enviament gratuït dels teus productes.</p>
+      </details>
+      
+      <details>
+        <summary>Quan s'enviarà el producte?</summary>
+        <p>Un cop verificat el pagament (normalment en menys de 24h), procedirem a tramitar la teva comanda immediatament.</p>
+      </details>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  © <span id="year"></span> TGN Fan Shop · Pagament 100% segur a través de PayPal.
+</footer>
+
+<script>
+  // Utilitats de còpia
+  const $ = (s) => document.querySelector(s);
+  const mail = $('#mail').textContent.trim();
+
+  // Toast simple
+  function toast(msg) {
+    const t = document.createElement('div');
+    t.textContent = msg;
+    t.style.cssText = 'position:fixed; bottom:20px; right:20px; background:var(--grana); color:white; padding:12px 20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.2); z-index:999; font-weight:bold;';
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2500);
+  }
+
+  $('#copyMail').addEventListener('click', async () => {
+    await navigator.clipboard.writeText(mail);
+    toast('Email copiat al porta-retalls!');
+  });
+
+  $('#copyAll').addEventListener('click', async () => {
+    const text = `INSTRUCCIONS TGN FAN SHOP:\n1. Mètode: PayPal (Amics i Familiars)\n2. Enviar a: ${mail}\n3. Guarda el comprovant.`;
+    await navigator.clipboard.writeText(text);
+    toast('Instruccions copiades!');
+  });
+
+  // Animació simple per Bizum desactivat
+  $('#opt-bizum').addEventListener('click', () => {
+    $('#opt-bizum').style.transform = 'translateX(5px)';
+    setTimeout(() => $('#opt-bizum').style.transform = 'translateX(0)', 100);
+    toast('Bizum no disponible actualment');
+  });
+
+  $('#year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

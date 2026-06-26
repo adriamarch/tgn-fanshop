@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tgnfan.shop/sitemap.xml
